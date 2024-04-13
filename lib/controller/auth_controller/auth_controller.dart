@@ -82,6 +82,7 @@ class AuthService {
           response: res,
           context: context,
           onSuccess: () async {
+            showSnackBaaar(context, 'Welcome Back');
            // SharedPreferences prefs = await SharedPreferences.getInstance();
           //  userProvider.setUser(res.body);
          //   await prefs.setString('x-auth-token', jsonDecode(res.body)['token']);
@@ -128,7 +129,6 @@ class AuthService {
             'x-auth-token': token,
           },
         );
-
         userProvider.setUser(userRes.body);
       }
     } catch (e) {

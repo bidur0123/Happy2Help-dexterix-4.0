@@ -58,8 +58,9 @@ class HomePage extends StatelessWidget {
           Navigator.push(
               context, MaterialPageRoute(builder: (context) => ChatBotApp()));
         },
-        child: const Icon(
-          Icons.chat,
+        child:  ImageIcon(
+          AssetImage('assets/icons/bot.png'),
+         size: 35,
         ),
         backgroundColor: Colors.grey,
       ),
