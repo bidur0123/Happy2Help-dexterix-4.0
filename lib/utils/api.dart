@@ -1,3 +1,3 @@
 class Api {
-  static String uri = 'https://dexterix-4-0-2.onrender.com';
+  static String uri = 'https://backend-hack-2.onrender.com/';
 }

@@ -4,10 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:happy2help/Screens/ChatBot/chat_bot.dart';
 import 'package:happy2help/Screens/ChatPage/view/chat_bot/chat_bot.dart';
 import 'package:happy2help/Screens/HomePage/component/banner.dart';
+import 'package:happy2help/Screens/HomePage/component/product_custom_card.dart';
+import 'package:happy2help/Screens/HomePage/component/score11_20.dart';
 import 'package:happy2help/Screens/HomePage/component/steps_of_apps.dart';
 import 'package:happy2help/Screens/HomePage/component/upcoming.dart';
 import 'package:happy2help/Screens/NotificationScreen/notifi.dart';
 import 'package:happy2help/Screens/SurveyPage/component/survey_start.dart';
+import 'package:happy2help/Screens/bot_akshat/bot.dart';
 import 'package:happy2help/utils/custom_button.dart';
 
 class HomePage extends StatelessWidget {
@@ -56,7 +59,7 @@ class HomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => const ChatBot()));
+              context, MaterialPageRoute(builder: (context) => const ChatBotPage()));
         },
         child:  const ImageIcon(
           AssetImage('assets/icons/bot.png'),
@@ -150,6 +153,38 @@ class HomePage extends StatelessWidget {
               const UpcomingAppointments(),
               const SizedBox(
                 height: 40,
+              ),
+              Container(
+                alignment: Alignment.topLeft,
+                padding: const EdgeInsets.only(left: 25),
+                child: const Text(
+                    "Community",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(
+                  height: 250,
+                  child: ListView.builder(
+                      shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                      itemCount: 1,
+                      itemBuilder: (BuildContext context, int index) {
+                        return ProductsCustomCard();
+                      }),
+                 ),
+            
+              SizedBox(
+                height: 250,
+                child: ListView.builder(
+                    shrinkWrap: true,
+                    scrollDirection: Axis.horizontal,
+                    itemCount: 1,
+                    itemBuilder: (BuildContext context, int index) {
+                      return ProductsCustomCard2();
+                    }),
               ),
             ],
           ),

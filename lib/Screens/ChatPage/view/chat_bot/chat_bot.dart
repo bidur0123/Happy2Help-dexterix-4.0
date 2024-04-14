@@ -35,12 +35,12 @@ class _ChatBotState extends State<ChatBot> {
           title: const Text("Saathi"),
           centerTitle: true,
           elevation: 0,
-          leading: IconButton(
-            icon: const Icon(Icons.menu),
-            onPressed: () {
-              Get.to(() => const MenuPage());
-            },
-          ),
+          // leading: IconButton(
+          //   icon: const Icon(Icons.menu),
+          //   onPressed: () {
+          //     Get.to(() => const MenuPage());
+          //   },
+          // ),
           actions: [
             IconButton(
               icon: const Icon(Icons.more_horiz_rounded),
@@ -59,12 +59,12 @@ class _ChatBotState extends State<ChatBot> {
                 const Column(
                   children: [
                     Text(
-                      'Copilot,',
+                      'You Can,',
                       style:
                           TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold),
                     ),
                     Text(
-                      'with Bing',
+                      'try these searches',
                       style: TextStyle(
                         fontSize: 8.0,
                       ),
@@ -104,19 +104,19 @@ class _ChatBotState extends State<ChatBot> {
                 Expanded(
                   child: Row(
                     children: [
-                      Expanded(
-                        flex: 1,
-                        child: IconButton(
-                          // Inside the onPressed callback of the send button
-                            onPressed: ()  {
-
-                            },
-                            icon: const Icon(
-                              Icons.chat_bubble_outline_rounded,
-                              color: Colors.black,
-                              size: 30,
-                            )),
-                      ),
+                      // Expanded(
+                      //   flex: 1,
+                      //   child: IconButton(
+                      //     // Inside the onPressed callback of the send button
+                      //       onPressed: ()  {
+                      //
+                      //       },
+                      //       icon: const Icon(
+                      //         Icons.chat_bubble_outline_rounded,
+                      //         color: Colors.black,
+                      //         size: 30,
+                      //       )),
+                      // ),
                       Expanded(
                         flex: 6,
                         child: TextFormField(
