@@ -2,7 +2,7 @@ import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:happy2help/Screens/ChatBot/chat_bot.dart';
-import 'package:happy2help/Screens/ExpertPage/expert_page.dart';
+import 'package:happy2help/Screens/ChatPage/view/chat_bot/chat_bot.dart';
 import 'package:happy2help/Screens/HomePage/component/banner.dart';
 import 'package:happy2help/Screens/HomePage/component/steps_of_apps.dart';
 import 'package:happy2help/Screens/HomePage/component/upcoming.dart';
@@ -56,10 +56,11 @@ class HomePage extends StatelessWidget {
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           Navigator.push(
-              context, MaterialPageRoute(builder: (context) => ChatBotApp()));
+              context, MaterialPageRoute(builder: (context) => const ChatBot()));
         },
-        child: const Icon(
-          Icons.chat,
+        child:  const ImageIcon(
+          AssetImage('assets/icons/bot.png'),
+         size: 35,
         ),
         backgroundColor: Colors.grey,
       ),

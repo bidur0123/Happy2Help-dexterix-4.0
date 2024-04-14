@@ -1,16 +1,22 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:happy2help/Screens/BaseScreen/base_screen.dart';
 import 'package:happy2help/Screens/welcome_screen/welcome_screen.dart';
 import 'package:happy2help/constant/constants.dart';
 import 'package:happy2help/controller/auth_controller/auth_controller.dart';
+import 'package:happy2help/firebase_options.dart';
 import 'package:happy2help/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 
 void main() {
+    dotenv.load(fileName: ".env");
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (_) => UserProvider()),
   ], child: const MyApp()));
 }
+
+
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});
