@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "483331548298",
+    "project_id": "happy2help-524a9",
+    "storage_bucket": "happy2help-524a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:483331548298:android:66aa2dffb761b71b4f3973",
+        "android_client_info": {
+          "package_name": "com.example.happy2help"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDOAK9ni8xiPxEtl0SPGDLMP5hvvhs2DkQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
