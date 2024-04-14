@@ -5,5 +5,8 @@ const kPrimaryLightColor = Color(0xFFF1E6FF);
 
 const double defaultPadding = 16.0;
 
+
+const baseUrl = "https://annanyaproject.onrender.com";
 final kThemeColor = Colors.purple.shade100;
+
 
