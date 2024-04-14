@@ -9,16 +9,14 @@ import 'package:happy2help/firebase_options.dart';
 import 'package:happy2help/providers/user_provider.dart';
 import 'package:provider/provider.dart';
 
-Future<void> main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-  await dotenv.load(fileName: ".env");
+void main() {
+    dotenv.load(fileName: ".env");
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (_) => UserProvider()),
   ], child: const MyApp()));
 }
+
+
 
 class MyApp extends StatefulWidget {
   const MyApp({super.key});

@@ -72,9 +72,9 @@ class AuthService {
 
       print('Response body: ${res.body}');
 
-      navigator.pushAndRemoveUntil(
-          MaterialPageRoute(builder: (context) => const BaseScreen()),
-              (route) => false);
+      // navigator.pushAndRemoveUntil(
+      //     MaterialPageRoute(builder: (context) => const BaseScreen()),
+      //         (route) => false);
 
       // Check if the response body is not null or empty before setting the user
       if (res.body != null && res.body.isNotEmpty) {
@@ -83,12 +83,12 @@ class AuthService {
           context: context,
           onSuccess: () async {
             showSnackBaaar(context, 'Welcome Back');
-           // SharedPreferences prefs = await SharedPreferences.getInstance();
-          //  userProvider.setUser(res.body);
-         //   await prefs.setString('x-auth-token', jsonDecode(res.body)['token']);
-         //    navigator.pushAndRemoveUntil(
-         //        MaterialPageRoute(builder: (context) => const BaseScreen()),
-         //            (route) => false);
+           SharedPreferences prefs = await SharedPreferences.getInstance();
+           userProvider.setUser(res.body);
+           await prefs.setString('x-auth-token', jsonDecode(res.body)['token']);
+            navigator.pushAndRemoveUntil(
+                MaterialPageRoute(builder: (context) => const BaseScreen()),
+                    (route) => false);
           },
         );
       } else {
