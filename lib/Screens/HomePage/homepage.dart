@@ -1,8 +1,6 @@
-import 'dart:ffi';
+// import 'dart:ffi';
 
 import 'package:flutter/material.dart';
-import 'package:happy2help/Screens/ChatBot/chat_bot.dart';
-import 'package:happy2help/Screens/ChatPage/view/chat_bot/chat_bot.dart';
 import 'package:happy2help/Screens/HomePage/component/banner.dart';
 import 'package:happy2help/Screens/HomePage/component/product_custom_card.dart';
 import 'package:happy2help/Screens/HomePage/component/score11_20.dart';
@@ -175,7 +173,7 @@ class HomePage extends StatelessWidget {
                         return ProductsCustomCard();
                       }),
                  ),
-            
+
               SizedBox(
                 height: 250,
                 child: ListView.builder(

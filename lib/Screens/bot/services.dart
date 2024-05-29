@@ -1,5 +1,5 @@
 import 'dart:convert';
-import 'package:happy2help/Screens/bot_akshat/model.dart';
+import 'package:happy2help/Screens/bot/model.dart';
 import 'package:http/http.dart' as http;
 
 class ChatBotService {
