@@ -18,31 +18,18 @@ The Mental Health Support App is a convenient and accessible platform designed t
 
 - **Reliable and Secure**: The Mental Health Support App ensures the privacy and security of users' data, providing a reliable platform for seeking mental health support online.
 
-[//]: # (## Screenshots)
+## Screenshots
 
-[//]: # ()
-[//]: # (![Screenshots]&#40;screenshot/Home_Page.jpg&#41;)
-
-[//]: # ()
-[//]: # (![Screenshots]&#40;screenshot/survey_page.jpg&#41;)
-
-[//]: # ()
-[//]: # (![Screenshots]&#40;screenshot/survey_result_page.jpg&#41;)
-
-[//]: # ()
-[//]: # (![Screenshots]&#40;screenshot/Our_Experts_Page.jpg&#41;)
-
-[//]: # ()
-[//]: # (![Screenshots]&#40;screenshot/self_hel_activities.jpg&#41;)
-
-[//]: # ()
-[//]: # (![Screenshots]&#40;screenshot/doctor_details_page.jpg&#41;)
-
-[//]: # ()
-[//]: # (![Screenshots]&#40;screenshot/anonmous_community.jpg&#41;)
-
-[//]: # ()
-[//]: # (![Screenshots]&#40;screenshot/Profile_Page.jpg&#41;)
+<p align="center">
+    <img src="screenshot/Home_Page.jpg" alt="Home Page" width="200"/>
+    <img src="screenshot/survey_page.jpg" alt="Survey Page" width="200"/>
+    <img src="screenshot/survey_result_page.jpg" alt="Survey Result Page" width="200"/>
+    <img src="screenshot/Our_Experts_Page.jpg" alt="Our Experts Page" width="200"/>
+    <img src="screenshot/self_hel_activities.jpg" alt="Self Help Activities" width="200"/>
+    <img src="screenshot/doctor_details_page.jpg" alt="Doctor Details Page" width="200"/>
+    <img src="screenshot/anonmous_community.jpg" alt="Anonymous Community" width="200"/>
+    <img src="screenshot/Profile_Page.jpg" alt="Profile Page" width="200"/>
+</p>
 
 ## Technology Stack
 
